@@ -17,7 +17,12 @@ A Titanium Module to use the following [HUAWEI Push Kit](https://developer.huawe
 - [x] Make sure to add the following [HMS preparation](https://github.com/ikamaru/ti.hms.enviroment_prepration) Plugin to you project which is responsible for preparing the HMS environment in your project.
 
 ## Preparation
-- [x] Download the `com.ikamaru.ti.hms.push` folder from this repo and past it inside `C:\ProgramData\Titanium\modules\android\`
+- [x] Download the `com.ikamaru.ti.hms.push` folder from this repo and past it inside `C:\ProgramData\Titanium\modules\android\` then add this module to your tiapp.xml as the following
+```xml
+<modules>
+ <module version="1.0.0" platform="android">com.ikamaru.ti.hms.push</module>
+</modules>
+```
 - [x] Before using Push Kit, enable it. For details, please refer to [Enabling Required Services](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/android-config-agc-0000001050170137-V5#EN-US_TOPIC_0000001078601380__section9471122085218).
 - [x] After enabling the Push Kit make sure to re-download the `agconnect-services.json` and add it to the root folder of your project as described in the HMS preparation [HMS preparation](https://github.com/ikamaru/ti.hms.enviroment_prepration) Plugin 
 
@@ -208,26 +213,22 @@ To test your app you can send messages on the Push Kit console in AppGallery Con
 - Sign in to [AppGallery Connect](https://developer.huawei.com/consumer/en/service/josp/agc/index.html), select My projects, and find your project in the project list. Go to Project settings > Grow > Push Kit > Notifications. Click Add notification to create a task.
 - For more detail refer to the following [guide](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/msg-sending-0000001050042119-V5).
 
-In the previous example we did print the token in log the token, copy that token:
-
-<img src="com.ikamaru.ti.hms.push/1.0.0/log_token.PNG"/>
+In the previous example we did print the token in log, copy that token:
+<img src="com.ikamaru.ti.hms.push/1.0.0/example/log_token.PNG"/>
 
 Fill the Notification information:
-
-<img src="com.ikamaru.ti.hms.push/1.0.0/prepare_push.PNG"/>
+<img src="com.ikamaru.ti.hms.push/1.0.0/example/prepare_push.PNG"/>
 
 You can send Push notification or data message:
-- To specified device using the token we copied:
 
-<img src="com.ikamaru.ti.hms.push/1.0.0/send_using_token.PNG"/>
+- To specified device using the token we copied:
+<img src="com.ikamaru.ti.hms.push/1.0.0/example/send_using_token.PNG"/>
 
 - To subscribers:
+<img src="com.ikamaru.ti.hms.push/1.0.0/example/send_to_subscribers.PNG"/>
 
-<img src="com.ikamaru.ti.hms.push/1.0.0/send_to_subscribers.PNG"/>
-
-result:
-
-<img src="com.ikamaru.ti.hms.push/1.0.0/notification_result.jpg"/>
+Result:
+<img src="com.ikamaru.ti.hms.push/1.0.0/example/notification_result.jpg"/>
 
 
 ## Build
