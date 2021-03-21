@@ -14,7 +14,7 @@ A Titanium Module to use the following [HUAWEI Push Kit](https://developer.huawe
 * [Credits](#credits)
 
 ## Requirements
-- [x] Make sure to add the following [HMS preparation](https://github.com/ikamaru/ti.hms.enviroment_prepration) Plugin to you project which is responsible for preparing the HMS environment in your project.
+- [x] Make sure to add the following [HMS preparation](https://github.com/ikamaru/titanium-hms-env_preparation) Plugin to you project which is responsible for preparing the HMS environment in your project.
 
 ## Preparation
 - [x] Download the `com.ikamaru.ti.hms.push` folder from this repo and past it inside `C:\ProgramData\Titanium\modules\android\` then add this module to your tiapp.xml as the following
@@ -24,7 +24,7 @@ A Titanium Module to use the following [HUAWEI Push Kit](https://developer.huawe
 </modules>
 ```
 - [x] Before using Push Kit, enable it. For details, please refer to [Enabling Required Services](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/android-config-agc-0000001050170137-V5#EN-US_TOPIC_0000001078601380__section9471122085218).
-- [x] After enabling the Push Kit make sure to re-download the `agconnect-services.json` and add it to the root folder of your project as described in the HMS preparation [HMS preparation](https://github.com/ikamaru/ti.hms.enviroment_prepration) Plugin 
+- [x] After enabling the Push Kit make sure to re-download the `agconnect-services.json` and past it to the **platform/android** folder of your project as described in the HMS preparation [HMS preparation](https://github.com/ikamaru/titanium-hms-env_preparation#structure-of-the-project) Plugin 
 
 ## Notes:
 ### Setting the Notification Icon
