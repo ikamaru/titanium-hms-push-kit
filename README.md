@@ -192,14 +192,6 @@ hmsPush.registerForPushNotifications();
 Ti.API.info("Last data: " + hmsPush.lastData);
 
 
-// check if token is already available
-if (hmsPush.token !== null) {
-    Ti.API.info('hmsPush-Token', hmsPush.token);
-} else {
-    Ti.API.info('Token is empty. Waiting for the token callback ...');
-}
-
-
 // subscribe to topic
 hmsPush.subscribeToTopic('testTopic');
 ```
