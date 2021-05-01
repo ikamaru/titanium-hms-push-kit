@@ -17,7 +17,7 @@ A Titanium Module to use the following [HUAWEI Push Kit](https://developer.huawe
 - [x] Make sure to add the following [HMS preparation](https://github.com/ikamaru/titanium-hms-env_preparation) Plugin to you project which is responsible for preparing the HMS environment in your project.
 
 ## Preparation
-- [x] Download the `com.ikamaru.ti.hms.push` folder from this repo and past it inside `C:\ProgramData\Titanium\modules\android\` then add this module to your tiapp.xml as the following
+- [x] Download the `com.ikamaru.ti.hms.push` folder from this repo and past it inside the `modules/android/` folder then add this module to your **tiapp.xml** as the following
 ```xml
 <modules>
  <module version="1.0.0" platform="android">com.ikamaru.ti.hms.push</module>
@@ -162,10 +162,10 @@ The propery `lastData` will contain the data part when you send a notification p
 ## Example
 ```js
 
-// Important: Include cloud messaging module after the initial configure()
+// Important: Include Push kit module after the initial configure()
 var hmsPush = require('com.ikamaru.ti.hms.push');
 
-// Called when the Firebase token is ready
+// Called when the Push kit token is ready
 hmsPush.addEventListener('didRefreshRegistrationToken', onToken);
 
 // Called when direct messages arrive. Note that these are different from push notifications
@@ -179,7 +179,7 @@ function onMessage(e) {
     Ti.API.info('Message', e.message);
 }
 
-// Android: For configuring custom sounds and importance for the generated system
+//For configuring custom sounds and importance for the generated system
 // notifications when app is in the background
 hmsPush.createNotificationChannel({
     sound: 'warn_sound',
