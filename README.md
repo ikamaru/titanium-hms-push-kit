@@ -20,7 +20,7 @@ A Titanium Module to use the following [HUAWEI Push Kit](https://developer.huawe
 - [x] Download the `com.ikamaru.ti.hms.push` folder from this repo and past it inside the `modules/android/` folder then add this module to your **tiapp.xml** as the following
 ```xml
 <modules>
- <module version="1.0.0" platform="android">com.ikamaru.ti.hms.push</module>
+ <module version="2.0.0" platform="android">com.ikamaru.ti.hms.push</module>
 </modules>
 ```
 - [x] Before using Push Kit, enable it. For details, please refer to [Enabling Required Services](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/android-config-agc-0000001050170137-V5#EN-US_TOPIC_0000001078601380__section9471122085218).
@@ -206,21 +206,21 @@ To test your app you can send messages on the Push Kit console in AppGallery Con
 - For more detail refer to the following [guide](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides-V5/msg-sending-0000001050042119-V5).
 
 In the previous example we did print the token in log, copy that token:
-<img src="com.ikamaru.ti.hms.push/1.0.0/example/log_token.PNG"/>
+<img src="com.ikamaru.ti.hms.push/2.0.0/example/log_token.PNG"/>
 
 Fill the Notification information:
-<img src="com.ikamaru.ti.hms.push/1.0.0/example/prepare_push.PNG"/>
+<img src="com.ikamaru.ti.hms.push/2.0.0/example/prepare_push.PNG"/>
 
 You can send Push notification or data message:
 
 - To specified device using the token we copied:
-<img src="com.ikamaru.ti.hms.push/1.0.0/example/send_using_token.PNG"/>
+<img src="com.ikamaru.ti.hms.push/2.0.0/example/send_using_token.PNG"/>
 
 - To subscribers:
-<img src="com.ikamaru.ti.hms.push/1.0.0/example/send_to_subscribers.PNG"/>
+<img src="com.ikamaru.ti.hms.push/2.0.0/example/send_to_subscribers.PNG"/>
 
 Result:
-<img src="com.ikamaru.ti.hms.push/1.0.0/example/notification_result.jpg"/>
+<img src="com.ikamaru.ti.hms.push/2.0.0/example/notification_result.jpg"/>
 
 
 ## Build
